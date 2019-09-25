@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>jquery</title>
+<script src ="/home/rohit/Desktop/programming/html/jquery-3.4.1.js" ></script>
+<script>
+$(document).ready(function(){
+$('.over').mouseover(function(){
+$(this).css('background','red');
+});
+$('.over').click(function(){
+$(this).css('background','blue');
+});
+$('.out').mouseout(function(){
+$(this).css('background','blue');
+});
+$('.hover').hover(function(){
+$(this).css('color','red');},
+function(){
+$(this).css('color','purple');
+
+});
+
+});
+</script>
+<body>
+<table>
+<tr>
+<th></th><td><input type="button" value="mouse over" class="over"/></td>
+<td><input type="button" value="mouse out"  class="out"/></td>
+<td><input type="button" value="Hover"  class="hover"/></td>
+</tr>
+</table>
+</body>
+</head>
+</html>

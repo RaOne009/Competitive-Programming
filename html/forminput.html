@@ -1,0 +1,127 @@
+<html>
+<head>
+<title>print input</title>
+
+</head>
+<body>
+<fieldset>
+<legend>form</legend>
+<form name="form">
+<table>
+<tr>
+<th>First Name</th><td><input type="text" name="fname" ><label id="aa" style=""></label></td>
+</tr>
+<tr>
+<th>Last Name</th><td><input type="text" name="lname" ><label id="ss" style=""></label></td>
+</tr>
+<tr>
+<th>Password</th><td><input type="password" name="pass"><label id="dd" style=""></label></td>
+</tr>
+<tr>
+<th>Email</th><td><input type="email" name="mail"><label id="ff" style=""></label></td>
+</tr>
+<tr>
+<th>Gender</th><td><input type="radio" name="as" value="Male">Male
+<input type="radio" name="as" value="Female">Female  <label id="gg" style=""></label>  </td>
+</tr>
+<tr>
+<th>Subjectes</th><td><input type="checkbox" name="sub" value="maths">Maths
+<input type="checkbox" name="sub" value="Physics">Physic
+<input type="checkbox" name="sub" value="English">English
+<input type="checkbox" name="sub" value="Chemistry">chemistry
+<input type="checkbox" name="sub" value="Computer">computer  <label id="hh" style=""></label></td>
+</tr>
+<tr>
+<th>Branch</th><td><select name="sel"><option>CSE</option><option>ECE</option><option>EEE</option><option>CIVIL</option><option>MECH</option></select></td>
+</tr>
+<tr> 
+<th>Address</th><td><textarea name="add"></textarea> <label id="ww" style=""></label></td>
+</tr>
+<tr>
+<th>dob</th><td><input type="number" name="num">   <label id="jj" style=""></label></td></td>
+</tr>
+<tr>
+<th></th><td><input type="submit" value="save"  onclick="toy()" /></td>
+</tr>
+</table>
+</form>
+</fieldset>
+<script>
+function toy(){
+var a = document.form.fname.value;
+var s = document.form.lname.value;
+var d = document.form.pass.value;
+var f = document.form.mail.value;
+var g = document.form.as.value;
+var h = document.getElementsByName("sub");
+var j = document.form.num.value;
+var q = document.form.sel.value;
+var w = document.form.add.value;
+var sel="";
+for(i=0;i<h.length;i++){
+if(h[i].type="checkbox" && h[i].checked==true)
+sel+=h[i].value+",";
+}
+if(a==""){
+var q =document.getElementById("aa");
+q.innerHTML="ENter firstName."
+
+}
+
+
+else if(s==""){
+var y =document.getElementById("ss");
+y.innerHTML="ENter LastName."
+
+}
+
+
+else if(d==""){
+var w =document.getElementById("dd");
+w.innerHTML="ENter Your Password"
+
+}
+
+
+else if(f==""){
+var e =document.getElementById("ff");
+e.innerHTML="ENter your Email."
+
+}
+else if(g==""){
+var r =document.getElementById("gg");
+r.innerHTML="select your Gender"
+
+}
+else if(h.length<3){
+var r =document.getElementById("hh");
+r.innerHTML="Select Min of 3 sub"
+
+}
+else if(w==""){
+var r =document.getElementById("ww");
+r.innerHTML="Addres can't be empty"
+
+}
+else if(j==""){
+var r =document.getElementById("jj");
+r.innerHTML="Enter YOUR date of birth"
+}
+
+else{
+
+
+document.write("Full Name:-  " + " " + a + " " + s + "<br>");
+document.write("Password:-  " + " " + d + "<br>");
+document.write("Email:-  " + " " + f + "<br>");
+document.write("Gender:-  " +  " " + g + "<br>")
+document.write("Subjects:- " + " " + sel + "<br>");
+document.write("Date:- " + " " + j + "<br>");
+document.write("Branch:- " + " " + q + "<br>");
+document.write("Addres:- " + " " + w + "<br>");
+
+
+}
+}</script>
+</body>
+</html>

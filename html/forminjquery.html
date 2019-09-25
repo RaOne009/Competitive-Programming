@@ -1,0 +1,134 @@
+<html>
+<head>
+<title>form by jquery</title>
+<script src="/home/rohit/Desktop/programming/html/jquery-3.4.1.js"></script>
+<script>
+$(document).ready(function(){
+/*$('.fname').keyup(function(){
+var d=$('.fname').val();
+var s=$('.lname').val();
+$('p').text("Name:- " + d);
+});*/
+$('.pass').keyup(function(){
+var a =$('.pass').val().length;
+if(a<5){
+$('p0').text("weak name")
+$('p0').css('color','red')
+}
+if(a>=5&&a<=10){
+$('p0').text("Good name")
+$('p0').css('color','yellow')
+}
+if(a>10){
+$('p0').text("strong name")
+$('p0').css('color','green')
+}
+});
+
+$('.submit').click(function(){
+var a = $('.fname').val();
+var s = $('.lname').val();
+var d = $('.pass').val();
+var f = $('.mail').val();
+
+var h =document.getElementsByName('sub');
+var sel="";
+for(i=0;i<h.length;i++){
+if(h[i].type="checkbox" && h[i].checked==true)
+sel+=h[i].value + ",";
+}
+var g = $('input[name="as"]:checked').val();
+var j = $('.num').val();
+var q = $('.sel').val();
+var w = $('.add').val();
+if(a==""){
+$('#aaa').text("This field can't be empty")
+}
+else if(s==""){
+$('#aaa').text("");
+$('#sss').text("This field can't be empty")
+}
+else if(f==""){
+$('#sss').text("");
+$('#fff').text("This field can't be empty")
+}
+else if(g==""){
+$('#fff').text("");
+$('#ggg').text("This field can't be empty")
+}
+else if(j==""){
+
+$('#ggg').text("");
+$('#jjj').text("This field can't be empty")
+}
+else{
+$('#jjj').text("");
+$('#aa').text("Full name:- " + a + " " + s);
+$('#ss').text("Password:- " + d);
+$('#dd').text("Email:- " + f);
+$('#ff').text("Addres:- " + w);
+$('#gg').text("D.O.B :- " + j);
+$('#hh').text("Gender:- " + g);
+$('#jj').text("Branch:-" + q);
+$('#kk').text("subjects:- "+ sel)
+}
+});
+
+});
+</script>
+</head>
+<body>
+<fieldset>
+<legend>form</legend>
+<form name="form">
+<table>
+<tr>
+<th>First Name</th><td><input type="text" class="fname" ></td><td><p id="aaa"></p></td>
+</tr>
+<tr>
+<th>Last Name</th><td><input type="text" class="lname" ></td><td><p id="sss"></p></td>
+</tr>
+<tr>
+<th>Password</th><td><input type="password" class="pass" placeholder="Password" required><p0></p0></td>
+</tr>
+<tr>
+<th>Email</th><td><input type="email" class="mail"></td><td><p id="fff"></p></td>
+</tr>
+<tr>
+<th>Gender</th><td><input type="radio" name="as" value="Male">Male
+<input type="radio" name="as" value="Female">Female    </td><td><p id="ggg"></p></td>
+</tr>
+<tr>
+<th>Subjectes</th><td><input type="checkbox" name="sub" value="maths">Maths
+<input type="checkbox" name="sub" value="Physics">Physic
+<input type="checkbox" name="sub" value="English">English
+<input type="checkbox" name="sub" value="Chemistry">chemistry
+<input type="checkbox" name="sub" value="Computer">computer  
+</tr>
+<tr>
+<th>Branch</th><td><select class="sel"><option>CSE</option><option>ECE</option><option>EEE</option><option>CIVIL</option><option>MECH</option></select></td>
+</tr>
+<tr> 
+<th>Address</th><td><textarea class="add"></textarea> </td>
+</tr>
+<tr>
+<th>dob</th><td><input type="date" class="num"> </td><td><p id="jjj"></p></td>
+</tr>
+<tr>
+<th></th><td><input type="submit" value="save"  class="submit" /></td>
+</tr>
+</table>
+</form>
+</fieldset>
+<p></p><br>
+<p id="aa"><p>
+<p id="ss"></p>
+<p id="dd"></p>
+<p id="ff"></p>
+<p id="gg"></p>
+<p id="hh"></p>
+<p id="jj"></p>
+<p id="kk"></p>
+</body>
+
+</html>

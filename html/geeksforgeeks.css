@@ -1,0 +1,70 @@
+.head{width:100%;background:#00ff70;height:60px;}
+.logo{width: 15%;float:left}
+.logo h1{
+color: white;
+
+margin: 14px;
+}
+.var{width:85%;float:right;}
+.var li{color: white;
+
+display: inline;
+
+margin: 16px;}
+.var ul{padding-top: 10px;}
+.banner{
+width: 100%;
+
+height: 500px;
+
+background: url(/home/rohit/Music/MagazinePic-01-2.3.001-bigpicture_01_11.jpg)no-repeat;
+
+    background-attachment: scroll;
+    background-size: auto;
+
+background-size: 100%;
+
+background-attachment: fixed;}
+.ABS{width:100%;background:wheat; height:300px;}
+.abs1 h1{padding-left: 535px;text-decoration:underline;
+    font-size: 40px;}
+.left{width:50%;float:left;}
+.left p {color: black;font-size:25px; 
+
+}
+.right{width:47%;float:right;}
+.container{width:1170px;margin:0 auto;}
+.div{width:100%;background:#00ff00;height:530px;}
+.A{width:30%;float:left;margin-left: 37px;}
+.div h1{text-align: center;
+
+font-size: 41px;
+background-color: whitesmoke;}
+.div h2{text-align: center;
+
+font-size: 41px;
+background-color: whitesmoke;}
+.A a:hover{color:red;text-decoration:none;}
+.gallery{width:100%;background:#66ffff; height:600px;}
+.gallery h1{
+text-align: center;
+
+font-size: 41px;
+background-color: whitesmoke;}
+.as img{width: 307px;
+
+height: 204px;
+
+margin: 13px;
+
+float: left;}
+.foot{width:100%;background:#cccccc; height:300px;}
+.foot p{text-align: center;
+
+font-size: 20px;}
+.foot h1{text-align: center;
+
+font-size: 30px;
+font-style: italic;}
+
+

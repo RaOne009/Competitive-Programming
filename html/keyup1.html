@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>all in one</title>
+<script src="/home/rohit/Desktop/programming/html/jquery-3.4.1.js"></script>
+<script>
+$(document).ready(function(){
+$('.ful').keyup(function(){
+$(this).css('color','blue')
+var a =$('.ful').val().length
+$('p').text(a);
+$('p1').addClass('weak');
+if(a<5){
+$('p1').text("weak name")
+$('p1').css('color','red')
+}
+if(a>=5&&a<=10){
+$('p1').text("Good name")
+$('p1').css('color','yellow')
+}
+if(a>10){
+$('p1').text("strong name")
+$('p1').css('color','green')
+}
+});
+$('.pass').keyup(function(){
+var s =$('.pass').val().length;
+if(s<5){
+$('.pass').css('background','red')
+}
+else if(s>=5&&s<=10){
+$('.pass').css('background','yellow')
+}
+else if(s>10){
+$('.pass').css('background','green')
+}
+});
+});
+</script>
+<style>
+.weak{color:red;font-size:40px;}
+</style>
+</head>
+<body>
+<form class="form">
+<fieldset>
+<legend>form</legend>
+<table>
+<tr>
+<th>Full Name</th><td><input type="text" class="ful" placeholder="Enter your name" required ><p1></p1></td>
+</tr>
+<tr>
+<th>Password</th><td><input type="Password" class="pass" placeholder="Password" required ></td>
+</tr>
+<tr>
+<th></th><td><input type="submit" value="submit" ></td>
+</tr>
+</table>
+</fieldset>
+</form>
+<p></p>
+</body>
+</html>

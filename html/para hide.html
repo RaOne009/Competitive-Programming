@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>para hide</title>
+<script src="/home/rohit/Desktop/programming/html/jquery-3.4.1.js"></script>
+
+<script>
+$(document).ready(function(){
+$('.hide').click(function(){
+$('.left').hide(150);
+$('.show').show(300);
+});
+$('.show').click(function(){
+$('.left').show(300);
+$(this).hide(150);
+
+});
+
+});
+</script>
+</head>
+<body>
+<section>
+	<div class="left">
+		<h1>Welcome To<br>
+		<span>TOTKA IAS/HAS ACADEMY</span></h1>
+		<h4>Tokta Acadmy is working to provide required guilines,regular classes<br>and comperhensive study material along with online and offline test series.<br><br>Our Approach </h4>
+		<p>Totka Acadmy is the best acadmy for IAS/HAS, PCS/HCS in Chandigarhis working to <br>Provide required guidlines, regular classes and comperhensive study material<br>along with online and offline test series.<br><br><br>Our Dedicated and experienced team is continously working and doing research <br>in order to prepare class room program where student can easily learnabout<br>dynamic current topicsand time to time changing UPSE syllabus and exam<br>pattern  </p>
+<input type="button" value="Hide"  class="hide"/>
+</div>
+
+<input type="button" value="show"  class="show"/>
+</section>
+</body>
+</html>

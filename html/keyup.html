@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>This function</title>
+<script src="/home/rohit/Desktop/programming/html/jquery-3.4.1.js"></script>
+<script>
+$(document).ready(function(){
+$('.fis').keyup(function(){
+$(this).css('color','whitesmoke');
+$(this).css('background','black');
+var a=$('.fis').val().length;
+$('p').text(a);
+$('p').css('color','red');
+
+});
+}); 
+
+
+</script>
+</head>
+<body>
+<form name="om">
+<table>
+<tr>
+<th>Full Name</th><td><input type="text" class="fis" placeholder="Enter your name" required ></td>
+</tr>
+<tr>
+<th>Password</th><td><input type="Password" class="fis" placeholder="Password" required ></td>
+</tr>
+<tr>
+<th></th><td><input type="submit" value="submit" ></td>
+</tr>
+</table>
+</form>
+<p></p>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<script>
+variables
+var m = "global";    
+function checkscope( ) {
+var m = "local";  
+document.write(m);
+}
+checkscope( );	
+
+
+
+
+var a = 100;
+function my(){
+var s=40;
+document.write(Number(a)+Number(s)+"<br >");
+
+}
+function m(){
+var s=30;
+document.write(Number(a)-Number(s));
+}
+my();
+m();
+
+
+</script>

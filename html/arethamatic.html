@@ -1,0 +1,17 @@
+<script>
+var a = prompt("no.");
+
+document.write("No.you entered:-" +a +"<br>");
+var cube=0;
+for(i=0;i<a.length;i++){
+
+cube=Number(cube)+(Number(a[i])*Number(a[i])*Number(a[i]));
+}
+document.write("Sum of the cube of the digits .:-" +  cube + "<br>");
+if(a/cube==1){
+document.write("Both are same");
+}
+else {
+document.write("BOth are note same");
+}
+</script>

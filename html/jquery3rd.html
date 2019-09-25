@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>jquery</title>
+<script src ="/home/rohit/Desktop/programming/html/jquery-3.4.1.js" ></script>
+<script>
+$(document).ready(function(){
+$('.in').click(function(){
+$('#im').fadeIn(3000);
+});
+$('.out').click(function(){
+$('#im').fadeOut(3000);
+});
+$('.toggle').click(function(){
+$('#im').fadeToggle();
+});
+$('.to').click(function(){
+$('#im').fadeTo(3000,.1);
+});
+});
+</script>
+<body>
+
+<img src="/home/rohit/Firefox_wallpaper.png" height:100vh width:80vh id="im"/>
+<table>
+<tr>
+<th></th><td><input type="button" value="fade in" class="in"/></td>
+<td><input type="button" value="fade out"  class="out"/></td>
+<td><input type="button" value="fade Toggle"  class="toggle"/></td>
+<td><input type="button" value="fade To"  class="to"/></td>
+</tr>
+</table>
+
+</body>
+</head>
+</html>

@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>jquery</title>
+<script src ="/home/rohit/Desktop/programming/html/jquery-3.4.1.js" ></script>
+<script>
+$(document).ready(function(){
+$('.up').click(function(){
+$('#im').slideUp();
+});
+$('.down').click(function(){
+$('#im').slideDown();
+});
+$('.ok').click(function(){
+$('#im').slideToggle(12345);
+});
+$('.stop').click(function(){
+$('#im').stop();
+});
+});
+</script>
+<body>
+
+<img src="/home/rohit/Firefox_wallpaper.png" height:100vh width:80vh id="im"/>
+<table>
+<tr>
+<th></th><td><input type="button" value="slide up" class="up"/></td>
+<td><input type="button" value="slide down"  class="down"/></td>
+<td><input type="button" value="slide Toggle"  class="ok"/></td>
+</tr>
+<tr>
+<td><input type="button" value="STOP"  class="stop"/></td>
+</tr>
+</table>
+</body>
+</head>
+</html>

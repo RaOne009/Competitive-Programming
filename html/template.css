@@ -1,0 +1,17 @@
+.head{width:100%;background:black;height:80px;}
+.logo{width:30%;float:left;}
+.logo h1{color:white;margin-top: 0px;
+
+padding-top: 25px;
+
+padding-left: 32px;}
+.nav{width:70%;float:right;}
+.nav li {
+
+    color: white;
+    display: inline;
+    padding-left: 8%;
+    font-size: 20px;
+
+}
+.nav ul{padding-top:10px;}

@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>jquery</title>
+<script src ="/home/rohit/Desktop/programming/html/jquery-3.4.1.js" ></script>
+<script>
+$(document).ready(function(){
+$('.hide').click(function(){
+$('#im').hide();
+});
+$('.show').click(function(){
+$('#im').show();
+});
+$('.toggle').click(function(){
+$('#im').toggle();
+});
+});
+</script>
+<body>
+
+<img src="/home/rohit/Firefox_wallpaper.png" height:100vh width:80vh id="im"/>
+<table>
+<tr>
+<th></th><td><input type="button" value="hide" class="hide"/></td>
+<td><input type="button" value="show"  class="show"/></td>
+<td><input type="button" value="Toggle"  class="toggle"/></td>
+</tr>
+</table>
+</body>
+</head>
+</html>

@@ -4,3 +4,5 @@
 # unignore all files with ext
 !*.*
 
+# unignore all dirs
+!*/

@@ -22,19 +22,23 @@ const ll N = 1e5 + 10;
 
 int main() {
     fast_io();
-    string n;
+    int n;
     cin >> n;
-    char s = n[0];
-    int k = 1, m = 1;
-    for (int i = 1; i < n.length(); ++i) {
-        if (s == n[i]) {
-            k++;
-        } else {
-            m = max(m, k);
-            k = 1;
+    if (n == 1) cout << "1\n";
+    if (n > 3) {
+        for (int i = 1; i <= n; ++i) {
+            if (i % 2 == 0) {
+                cout << i << " ";
+            }
         }
-        s = n[i];
+        for (int i = 1; i <= n; ++i) {
+            if (i % 2 == 1) {
+                cout << i << " ";
+            }
+        }
+        cout << "\n";
+    } else if (n < 4 and n > 1) {
+        cout << "NO SOLUTION\n";
     }
-    cout << max(m, k) << "\n";
     return 0;
 }

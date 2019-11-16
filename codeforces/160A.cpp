@@ -24,35 +24,27 @@ bool compare(int q, int w) {
 }
 int main() {
     fast_io();
-    int a;
-    cin >> a;
-    int g = a;
-    vector < int > vec;
-    while (a--) {
+    int n; 
+    cin >> n;
+    int sum = 0, cnt = 0;
+    vector <int> v;
+    for (int i = 0; i < n; ++i) {
 		int temp;
-		cin >> temp; 
-		vec.pb(temp);
+		cin >> temp;
+		sum += temp;
+		v.pb(temp);
+	} 
+	int a = 0;
+	sort(v.begin(), v.end(), compare);
+	for (int  i = 0; i < n; ++i) {
+		a += v[i];
+		if ((sum - a) >= a) {
+			++cnt;
+		} else {
+			cnt  = cnt + 0;
+		}
+		
 	}
-	int e = vec.size();
-	sort( vec.begin(), vec.end(), compare);
-	ll s = 0, d = 0;
-	if (g % 2 == 0) {
-		for (int i = 0; i < e; ++i) {
-			 if (i < g /2){
-				s += vec[i]; 
-			 } else {
-				d += vec[i]; 
-			 }
-		}
-   } else {
-			for (int i = 0; i < e; ++i) {
-			 if (i <= g /2){
-				s += vec[i]; 
-			 } else {
-			    d += vec[i]; 
-			 }
-		}
- 	}
- 	cout << ((s * s) + (d * d)) << "\n";
+	cout << cnt + 1 << endl;
     return 0;
 }

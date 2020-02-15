@@ -17,4 +17,4 @@ elif num3 == "+":
 if num1 == 56 and num2 == 6 and num3 == "-":
     print("Output :4")
 elif num3 == "-":
-    print("Output :",num1 - num2)    
+    print("Output :",num1 - num2)   

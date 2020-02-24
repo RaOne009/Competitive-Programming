@@ -1,5 +1,3 @@
-# Snake water gun
-
 import random
 lst = ['s','w','g']
 
@@ -11,7 +9,6 @@ human_point = 0
 print(" \t \t \t \t Snake,Water,Gun Game\n \n")
 print("s for snake \nw for water \ng for gun \n")
 
-# making the game in while
 while no_of_chance < chance:
     _input = input('Snake,Water,Gun:')
     _random = random.choice(lst)
@@ -79,9 +76,6 @@ else:
 
 print(f"your point is {human_point} and computer point is {computer_point}")
 
-#
-# Snake Water Gun Game in Python
 # The snake drinks the water, the gun shoots the snake, and gun has no effect on water.
-#
 
   

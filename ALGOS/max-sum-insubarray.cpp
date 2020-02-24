@@ -33,7 +33,7 @@ int main() {
     for (ll i = 0; i < tc; ++i) {
         for (ll j = i; j < tc; ++j) {
             currentsum = 0;
-            for (ll k = i; k < j; ++k) {
+            for (ll k = i; k <= j; ++k) {
                 currentsum += arr[k];
             }
             if (currentsum > maxsum) {

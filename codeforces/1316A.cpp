@@ -22,29 +22,21 @@ const ll inf = LLONG_MAX;
 const ll N = 1e5 + 10;
 
 void solve() {
-    int n, m;
-    cin >> n >> m;
-    vector < int > a;
-    vector < int > p;
-    for (int i = 0, i < n; ++i) {
-    	cin >> a[i];
+    int a, b;
+    cin >> a >> b;
+    int ar[a]; 
+    int sum = 0;
+    for (int i = 0; i < a; ++i) {
+    	cin >> ar[i];
+    	sum += ar[i];
     }
-    for (int i = 0; i < m; ++i) {
-    	int pos;
-    	cin >> pos;
-    	p[pos - 1] = 1;
-    }
-    while(true) {
-        bool ok = false;
-        for (int i = 0; i < n; ++i) {
-            if (p[i] && a[i] > a[i + 1]) {
-                ok = true;
-                swap(a[i], a[i + 1]);
-            }
-        }
-        if (!ok) {
-            break;
-        }
+    float avg = sum / float(a) ;
+    cout << avg << "\n";
+    if ((b / float(a)) <= avg) {
+    	cout << b << "\n";
+    } else {
+    	int f = (avg * a);
+    	cout << f << "\n";
     }
 }
 

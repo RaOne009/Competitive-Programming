@@ -22,30 +22,32 @@ const ll inf = LLONG_MAX;
 const ll N = 1e5 + 10;
 
 void solve() {
-    int n, m;
-    cin >> n >> m;
-    vector < int > a;
-    vector < int > p;
-    for (int i = 0, i < n; ++i) {
-    	cin >> a[i];
+    int a;
+    cin >> a;
+    int ar[a], ae[a];
+    for (int i = 0; i < a; ++i) {
+    	cin >> ar[i];
     }
-    for (int i = 0; i < m; ++i) {
-    	int pos;
-    	cin >> pos;
-    	p[pos - 1] = 1;
+    for (int i = 0; i < a; ++i) {
+    	cin >> ae[i];
     }
-    while(true) {
-        bool ok = false;
-        for (int i = 0; i < n; ++i) {
-            if (p[i] && a[i] > a[i + 1]) {
-                ok = true;
-                swap(a[i], a[i + 1]);
-            }
-        }
-        if (!ok) {
-            break;
-        }
+    sort(ae, ae + a);
+    sort(ar, ar + a);
+    // for (int i = 1; i <= a; ++i) {
+    // 	if ((ar[i] == ar[i + 1]) && (ae[i] == ae[i + 1])) {
+    // 		swap(ar[i], ar[i + 1]);
+    // 	}
+    // }
+    for (int i = 0; i < a; ++i) {
+    	cout << ar[i] << " ";
     }
+    cout << "\n";
+    for (int i = 0; i < a; ++i) {
+    	cout << ae[i] << " ";
+    }
+    cout << "\n";
+    
+
 }
 
 int main() {

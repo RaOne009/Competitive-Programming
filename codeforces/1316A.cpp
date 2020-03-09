@@ -31,7 +31,6 @@ void solve() {
     	sum += ar[i];
     }
     float avg = sum / float(a) ;
-    cout << avg << "\n";
     if ((b / float(a)) <= avg) {
     	cout << b << "\n";
     } else {

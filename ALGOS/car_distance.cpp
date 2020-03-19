@@ -21,7 +21,7 @@ const ll mod = 1e9 + 7;
 const ll inf = LLONG_MAX;
 const ll N = 1e5 + 10;
 
-bool compare(pair <int, int> p1, pair <int, int> p2) {
+	bool compare(pair <int, int> p1, pair <int, int> p2) {
 	int d1 = p1.first * p1.first + p1.second * p1.second;
 	int d2 = p2.first * p2.first + p2.second * p2.second;
 	if (d1 == d2) {
